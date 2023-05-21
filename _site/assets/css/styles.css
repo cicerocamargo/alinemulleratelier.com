@@ -70,7 +70,7 @@ table {
   /*	display: flex;*/
   margin: auto;
   /*  	justify-content: center;*/
-  padding: 48pt 16pt;
+  padding: 24pt 16pt;
 }
 
 h1 {
@@ -106,6 +106,10 @@ nav a {
   margin: 8pt;
 }
 
+nav li {
+  display: inline-block;
+}
+
 footer {
   font-family: "Engravers Gothic BT";
   color: rgb(148, 155, 141);
@@ -122,6 +126,16 @@ hr {
 p {
   font-family: "Arial";
   padding-top: 8pt;
+}
+
+.content-section {
+  padding-top: 20pt;
+}
+
+@media (max-width: 700px) {
+  nav li {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
