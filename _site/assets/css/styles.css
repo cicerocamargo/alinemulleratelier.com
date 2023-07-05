@@ -51,7 +51,12 @@ a {
 
 h1 {
   font-family: "Engravers Gothic BT";
-  font-size: 36px;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: "Engravers Gothic BT";
+  font-size: 22px;
 }
 
 nav {
@@ -89,7 +94,11 @@ p {
 }
 
 .content-section {
-  padding-top: 20pt;
+  padding-bottom: 20pt;
+}
+
+.content-section h1 {
+  padding-bottom: 8pt;
 }
 
 #header-img {
@@ -169,6 +178,57 @@ p {
 
 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
+}
+
+.obra {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* SLIDER */
+.slider-wrapper {
+  position: relative;
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 1;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
