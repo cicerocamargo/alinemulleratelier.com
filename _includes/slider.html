@@ -1,20 +1,28 @@
 <div class="slider-wrapper">
 	<div class="slider">
 		{% if include.image1 %}
-  		<img src="assets/images/{{ include.image1 }}.JPG" id="{{ include.image1 }}-slide">
+  		<img src="assets/images/{{ include.image1 }}" id="{{ include.paintingID }}-slide1">
 		{% endif %}
 		
 		{% if include.image2 %}
-  		<img src="assets/images/{{ include.image2 }}.JPG" id="{{ include.image2 }}-slide">
+  		<img src="assets/images/{{ include.image2 }}" id="{{ include.paintingID }}-slide2">
+		{% endif %}
+
+		{% if include.image3 %}
+  		<img src="assets/images/{{ include.image3 }}" id="{{ include.paintingID }}-slide3">
 		{% endif %}
 	</div>
 	<div class="slider-nav">
 		{% if include.image1 %}
-		<a href="#{{ include.image1 }}-slide"></a>
+		<a href="#{{ include.paintingID }}-slide1"></a>
 		{% endif %}
 
 		{% if include.image2 %}
-		<a href="#{{ include.image2 }}-slide"></a>
+		<a href="#{{ include.paintingID }}-slide2"></a>
+		{% endif %}
+
+		{% if include.image3 %}
+		<a href="#{{ include.paintingID }}-slide3"></a>
 		{% endif %}
 	</div>
 </div>

@@ -1,0 +1,12 @@
+<div class="painting" id="{{ include.paintingID }}">
+	<h2><a href="#{{ include.paintingID }}">{{ include.title }}</a></h2>
+	{% include slider.html %}
+	<div>
+		<p><b>Título:</b> <i>{{ include.title }}</i>.</p>
+		<p><b>Data da produção:</b> {{ include.date }}.</p>
+		<p><b>Dimensões:</b> {{ include.dimensions }}.</p>
+		<p>{{ include.more }}</p>
+		<p><b>Valor:</b> <i>{{ include.price }}</i></p>
+		<p><a href="./index.html#Contato">Entre em contato</a> para adquirir esta obra.</p>
+	</div>
+</div>
